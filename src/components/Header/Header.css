@@ -1,0 +1,15 @@
+.nav-item:hover{
+    background: rgb(88, 72, 69);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+a:hover{
+    color: #fff !important;
+    font-weight: 600;
+}
+a{
+    font-weight: 500;
+}
