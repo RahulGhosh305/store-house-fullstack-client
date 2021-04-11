@@ -5,9 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import TestSignUp from './components/TestSignUp';
 import Home from "./components/Home/Home";
-// import AddProduct from "./components/AddProduct/AddProduct";
 import CheckOut from "./components/CheckOut/CheckOut";
 import Order from "./components/Order/Order";
 import Admin from "./components/Admin/Admin";
@@ -22,7 +20,6 @@ function App() {
   const [loggedInUser, setLoggedInUser] = useState({})
   console.log(loggedInUser);
   return (
-    // <TestSignUp/>
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
         <Switch>

@@ -17,9 +17,10 @@ const CheckOut = () => {
 
     const History = useHistory()
     const checkoutHandle = () => {
-        console.log("Checkout Clicked");
-        const checkoutProductWithUserDetails = {loggedInUser, name, price, imageURL , Time : new Date()}
-        console.log(loggedInUser, name, price, imageURL);
+        console.log("Checkout Clicked email", loggedInUser.email );
+        const email = loggedInUser.email
+        const checkoutProductWithUserDetails = {loggedInUser, name, price, imageURL , email, Time : new Date()}
+        console.log(loggedInUser, name, price, imageURL, email);
 
         fetch('http://localhost:5000/checkoutToOrdered',{
             method : 'POST',
