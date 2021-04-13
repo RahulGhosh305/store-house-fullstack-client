@@ -7,7 +7,7 @@ const TableRow = (props) => {
         console.log("deleted", id);
         console.log("deleted", typeof id);
         
-        fetch(`http://localhost:5000/delete/${id}`,{
+        fetch(`https://mysterious-depths-20709.herokuapp.com/delete/${id}`,{
             method: 'DELETE',
         })
         .then(res => res.json())

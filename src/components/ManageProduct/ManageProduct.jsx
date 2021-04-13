@@ -4,7 +4,7 @@ import TableRow from './TableRow';
 const ManageProduct = () => {
     const [manageProduct, setManageProduct] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/products')
+        fetch('https://mysterious-depths-20709.herokuapp.com/products')
         .then(res => res.json())
         .then(data => setManageProduct(data))
     },[])

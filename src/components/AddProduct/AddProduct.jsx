@@ -14,7 +14,7 @@ const AddProduct = () => {
             weight : data.weight,
             imageURL : imageURL 
         }
-        const url = `http://localhost:5000/addProduct`;
+        const url = `https://mysterious-depths-20709.herokuapp.com/addProduct`;
         console.log(singleProductData)
         fetch(url, {
             method : "POST",

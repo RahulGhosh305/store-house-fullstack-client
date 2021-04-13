@@ -10,7 +10,7 @@ const CheckOut = () => {
     const {imageURL, name, weight, price} = checkoutProduct
     
     useEffect(()=>{
-        fetch(`http://localhost:5000/product/${productId}`)
+        fetch(`https://mysterious-depths-20709.herokuapp.com/product/${productId}`)
         .then(res => res.json())
         .then(data => setCheckoutProduct(data[0]))
     },[productId])
@@ -22,7 +22,7 @@ const CheckOut = () => {
         const checkoutProductWithUserDetails = {loggedInUser, name, price, imageURL , email, Time : new Date()}
         console.log(loggedInUser, name, price, imageURL, email);
 
-        fetch('http://localhost:5000/checkoutToOrdered',{
+        fetch('https://mysterious-depths-20709.herokuapp.com/checkoutToOrdered',{
             method : 'POST',
             headers : {
                 "Content-type" : "application/json",
